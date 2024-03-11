@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Registration Page</title>
+  </head>
+
+  <body>
+    <div
+      class="w-screen h-screen bg-gradient-to-r from-emerald-400 to-cyan-400 flex justify-center items-center flex-col"
+    >
+      <div
+        class="bg-white w-2/6 h-5/6 p-8 flex justify-center items-center flex-col rounded"
+      >
+        <h1 class="font-serif text-2xl p-2 pt-0">Registration Form</h1>
+        <form
+          id="registrationForm"
+          action="#"
+          class="w-full h-full font-serif flex justify-center items-center flex-col"
+        >
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="First Name"
+            class="border-2 border-gray-300 p-2 m-2 w-5/6"
+          />
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Last Name"
+            class="border-2 border-gray-300 p-2 m-2 w-5/6"
+          />
+          <input
+            type="number"
+            name="age"
+            id="age"
+            placeholder="Age"
+            class="border-2 border-gray-300 p-2 m-2 w-5/6"
+          />
+          <input
+            type="text"
+            name="rollNo"
+            id="rollNo"
+            placeholder="Roll No."
+            class="border-2 border-gray-300 p-2 m-2 w-5/6"
+          />
+          <select
+            name="gender"
+            id="gender"
+            class="border-2 border-gray-300 p-2 m-2 w-5/6"
+          >
+            <option value="select">Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Not willing to specify</option>
+          </select>
+          <textarea
+            name="hobbies"
+            id="hobbies"
+            cols="30"
+            rows="10"
+            placeholder="Enter your hobbies by comma seperated"
+            class="border-2 border-gray-300 p-2 m-2 w-5/6"
+          ></textarea>
+          <a
+            id="submitButton"
+            class="border-2 border-gray-300 p-2 m-2 bg-gradient-to-r from-teal-400 to-yellow-200 cursor-pointer"
+          >
+            Submit
+          </a>
+          <p>For Search <a href="search.html" class="text-blue-800">click here</a></p>
+        </form>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

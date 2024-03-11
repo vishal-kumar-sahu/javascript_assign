@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Registration Page</title>
+  </head>
+
+  <body>
+    <div
+      class="w-screen h-screen bg-gradient-to-r from-emerald-400 to-cyan-400 flex justify-center items-center flex-col"
+    >
+      <div
+        class="bg-white w-2/6 h-5/6 p-8 flex items-center flex-col rounded border-b-2"
+      >
+        <h1 class="font-serif text-2xl p-2 pt-0">Search Page</h1>
+        <form
+          action="#"
+          class="w-full h-2/5 font-serif flex items-center flex-col"
+        >
+          <input
+            type="text"
+            name="rollNo"
+            id="rollNo"
+            placeholder="Roll No."
+            class="border-2 border-gray-300 p-2 m-2 w-5/6"
+          />
+          <a
+            id="searchButton"
+            class="border-2 border-gray-300 p-2 m-2 bg-gradient-to-r from-teal-400 to-yellow-200 cursor-pointer"
+          >
+            Search
+          </a>
+          <p>For Registration <a href="index.html" class="text-blue-800">click here</a></p>
+        </form>
+
+        <div class="z-10 w-full border-t-2 border-gray-500 min-w-1">
+            <div id="output" disabled>
+                <p class="p-1 m-1">
+                    <span>First Name : </span>
+                    <span id="firstName"></span>
+                </p>
+                <p class="p-1 m-1">
+                    <span>Last Name : </span>
+                    <span id="lastName"></span>
+                </p>
+                <p class="p-1 m-1">
+                    <span>Age : </span>
+                    <span id="age"></span>
+                </p>
+                <p class="p-1 m-1">
+                    <span>Roll No. : </span>
+                    <span id="rollno"></span>
+                </p>
+                <p class="p-1 m-1">
+                    <span>Gender : </span>
+                    <span id="gender"></span>
+                </p>
+                <p class="p-1 m-1">
+                    <span>Hobbies : </span>
+                    <span id="hobbies"></span>
+                </p>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src="./search.js"></script>
+  </body>
+</html>
